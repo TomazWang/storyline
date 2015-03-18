@@ -1,0 +1,40 @@
+body {
+	text-align: center;
+}
+
+div {
+	padding : 0px;
+	margin : 0px;
+	display: inline-block;
+	vertical-align: top;
+
+}
+
+
+div.header {
+	background-color: lightGreen;
+}
+
+div.story {
+	width: 400px;
+	height: 180px;
+	border : solid;
+	border-width: 2px ;
+	border-color : lightgrey;
+	border-top: 5px solid #FF2232;
+	border-radius: 4px;
+	margin : 10px;
+	text-align: center;
+	padding : 15px;
+}
+
+div.content {
+	margin:30px auto;
+	max-width: 1000px;
+}
+
+p.story-context{
+
+	text-align: left;
+}
+
