@@ -1,5 +1,11 @@
+html,body{
+	height: 100%;
+}
+
 #container{
 	height: 100%;
+	width: 100%;
+	background:rgba(0,0,0,0.4);
 }
 
 
@@ -13,16 +19,15 @@
 #new-story-panel{
 	clear:both;
 	position:relative;
-	margin: 0 15%;
+	margin: 0 20%;
 }
 
 
 #new-story-text{
-	/* margin: 15px 20px 0 20px; */ 
 	margin:13px auto;
 }
 
 #new-story-summit{
-	margin: 20px 5px 5px 5px;
+	margin: 20px 0px 5px 5px;
 	text-align: right;
 }
