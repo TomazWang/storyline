@@ -18,17 +18,17 @@ $(document).ready(function(){
 
 			case "btn-st-poem":
 			$("#new-story-panel").attr('class','panel panel-info');
-			storyType = "btn-st-poem";			
+			storyType = "poem";			
 			break;
 
 			case "btn-st-comedy":
 			$("#new-story-panel").attr('class','panel panel-warning');
-			storyType="btn-st-comedy";
+			storyType="comedy";
 			break;
 
 			case "btn-st-thriller":
 			$("#new-story-panel").attr('class','panel panel-danger');
-			storyType = "btn-st-thriller";
+			storyType = "thriller";
 			break;
 
 		}
@@ -39,17 +39,38 @@ $(document).ready(function(){
 
 	$("#summit-new-story").click(function(){
 		// check if story type has been selected.
+
+		var text = $("#new-story-textarea").val();
+
+		console.log("story type = " + storyType);
+		console.log("story text = " + text);
+		
+		if(text=="" && storyType){
+			alert("Please enter some story and select a story type");
+			return;
+		}
+		if(text == ""){
+			alert("Please enter some story");
+			return;
+		}
+
 		if(storyType == "none"){
 			alert("Please select a type");
 			return;
 		}
 
+		console.log("new" + storyType+ " story");
+		console.log(text);
 
-
-
+		$("#new-story-page").hide();
+		storyType = "none";	
+		$("#new-story-textarea").val("");
 	});
 
 
+
 });
+
+
 
 
