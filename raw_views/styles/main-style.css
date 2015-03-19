@@ -1,0 +1,51 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	padding-top: 70px;
+}
+
+
+#context{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+.story-panel{
+	min-height: 200px;
+	cursor: pointer;
+}
+
+.navbar-btn{
+	margin-left: 5px;
+}
+
+
+#new-stroy-dialog{
+	width: 100%;
+	height: 100%;
+	background:rgba(0,0,0,0.6);
+	position: absolute;
+	top : 0;
+	left: 0;
+	z-index:5; 
+	display: none;
+}
+
+#btn-see-more{
+	margin:  15px auto;
+}
+
+.disable-select {
+	-webkit-user-select: none;  
+	-moz-user-select: none;    
+	-ms-user-select: none;      
+	user-select: none;
+}
+
+#navbar-btns-before-login{
+	display: none;
+}
