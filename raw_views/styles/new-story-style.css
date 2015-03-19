@@ -1,0 +1,52 @@
+@import url("index-style.css");
+
+div.form{
+
+}
+
+
+div.section{
+	display: block;
+	border: solid;
+	border-radius: 4px;
+	border-color: lightgrey;
+	margin: 10px auto;
+	padding : 20px;
+}
+
+
+div.story-type.button
+{
+
+	border: solid;
+	border-color: lightgrey;
+	border-width: 1px;
+	border-radius: 4px;
+	padding: 5px;
+
+}
+
+div.color-block.story-type{
+	border-radius: 4px;
+	background-color : #6CD5F1;
+	width: 10px;
+	min-height: 10px;
+	margin: 5px auto;
+}
+
+div.type-name.story-type{
+	height: ;
+}
+
+div.summit-story{
+	border:none;
+	text-align: right;
+}
+
+div.summit-button{
+	color:white;
+	font-style: bold;
+	background-color: green;
+	border-radius: 9px;
+	padding: 5px;
+}

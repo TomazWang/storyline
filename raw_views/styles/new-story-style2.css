@@ -1,0 +1,28 @@
+#container{
+	height: 100%;
+}
+
+
+#floater{
+	float:left;
+	margin-top: 27%;
+	width:1px; /* only for IE7 */
+}
+
+
+#new-story-panel{
+	clear:both;
+	position:relative;
+	margin: 0 15%;
+}
+
+
+#new-story-text{
+	/* margin: 15px 20px 0 20px; */ 
+	margin:13px auto;
+}
+
+#new-story-summit{
+	margin: 20px 5px 5px 5px;
+	text-align: right;
+}
