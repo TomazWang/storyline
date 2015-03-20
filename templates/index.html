@@ -1,18 +1,234 @@
-<!-- storyline: templete/index.html -->
-<!DOCTYPE html>
-
+<!-- raw_views/index.html -->
+<!DOCETPYE html>
 <html>
-	<head>
-		<title> Story Line </title>
-	</head>
+<head>
+	<title>Stroy Line</title>
+	<meta charset="utf-8">
 
-	<body>
-		<div class="header">
-			<h1> Story Line </h1>
-		</div>
+	<!-- import jQuery -->
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 
+	<!-- imort boostrap -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+	<!-- custom style -->
+	<link rel="stylesheet" href="{{STATIC_URL}}styles/new-story-dialog.css">
+	<link rel="stylesheet" href="{{STATIC_URL}}styles/main-style.css">
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
-			<p> Hey there!</p>
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Story Line</a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div id="navbar-btns-before-login">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<button type="button" class="btn btn-default navbar-btn" id="btn-login">Login</button>
+					</li>
+				</ul>
+			</div>
+			
+			<div id="navbar-btns-after-login">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<img id="user-photo" class="img-circle">
+					</li>
+					<li>
+						<button type="button" class="btn btn-default navbar-btn" id="btn-new-story"><span class="glyphicon glyphicon-pencil"></span> New Story</button>
+					</li>
+					<li>
+						<button type="button" class="btn btn-default navbar-btn" id="btn-setting"><span class="glyphicon glyphicon-cog"></span> Setting</button>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</nav>
+
+	<div class="container" id="context">
+		<!-- new story dialog -->
+		<div id="new-story-page" class="container">
+			<div id="new-story-block" class="container">
+				<div id="floater"></div>
+				<div id="new-story-panel" class="panel panel-default">
+					<div id="new-story-title-bar" class="panel-heading">
+						<h1 class="panel-title">New Story</h1>
+					</div>
+					<div id="new-story-body" class="panel-body">
+						<div id="new-story-type-btns" class="btn-group" role="group" aria-label="...">
+							<button type="button" class="btn btn-primary btn-story-type" id="btn-st-sifi">Si-Fi</button>
+							<button type="button" class="btn btn-success btn-story-type" id="btn-st-drama">Drama</button>
+							<button type="button" class="btn btn-warning btn-story-type" id="btn-st-comedy">Comedy</button>
+							<button type="button" class="btn btn-info btn-story-type" id="btn-st-poem">Poem</button>
+							<button type="button" class="btn btn-danger btn-story-type" id="btn-st-thriller">Thriller</button>
+						</div>
+
+						<div id="new-story-text">
+							<textarea id="new-story-textarea" class="form-control" rows="3"></textarea>
+						</div>
+
+						<div id="new-story-summit">
+							<button type="button" class="btn btn btn-default" id="summit-new-story">Summit</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
 		</div>
 
+		<!-- story list -->
+		<div id="storys" class="container">
+			<div class="row row-eq-height">
+				<div class="col-sm-6">
+					<div class="panel panel-default story-panel">
+						<div class="panel-heading">
+							<h1 class="panel-title"></h1>
+						</div>
+
+						<div class="panel-body">
+							<p class="story-text disable-select">story text here</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6">
+					<div class="panel panel-default story-panel">
+						<div class="panel-heading">
+							<h1 class="panel-title"></h1>
+						</div>
+
+						<div class="panel-body">
+							<p class="story-text disable-select">story text here</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="row row-eq-height">
+				<div class="col-sm-6">
+					<div class="panel panel-default story-panel">
+						<div class="panel-heading">
+							<h1 class="panel-title"></h1>
+						</div>
+
+						<div class="panel-body">
+							<p class="story-text disable-select">story text here</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6">
+					<div class="panel panel-default story-panel">
+						<div class="panel-heading">
+							<h1 class="panel-title"></h1>
+						</div>
+
+						<div class="panel-body">
+							<p class="story-text disable-select">story text here</p>
+						</div>
+					</div>
+				</div>
+			</div>	
+
+
+
+			<div class="row row-eq-height">
+				<div class="col-sm-6">
+					<div class="panel panel-default story-panel">
+						<div class="panel-heading">
+							<h1 class="panel-title"></h1>
+						</div>
+
+						<div class="panel-body">
+							<p class="story-text disable-select">story text here</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6">
+					<div class="panel panel-default story-panel">
+						<div class="panel-heading">
+							<h1 class="panel-title"></h1>
+						</div>
+
+						<div class="panel-body">
+							<p class="story-text disable-select">story text here</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row row-eq-height">
+				<div class="col-sm-6">
+					<div class="panel panel-default story-panel">
+						<div class="panel-heading">
+							<h1 class="panel-title"></h1>
+						</div>
+
+						<div class="panel-body">
+							<p class="story-text disable-select">story text here</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6">
+					<div class="panel panel-default story-panel">
+						<div class="panel-heading">
+							<h1 class="panel-title"></h1>
+						</div>
+
+						<div class="panel-body">
+							<p class="story-text disable-select">story text here</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row row-eq-height">
+				<div class="col-sm-6">
+					<div class="panel panel-default story-panel">
+						<div class="panel-heading">
+							<h1 class="panel-title"></h1>
+						</div>
+
+						<div class="panel-body">
+							<p class="story-text disable-select">story text here</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6">
+					<div class="panel panel-default story-panel">
+						<div class="panel-heading">
+							<h1 class="panel-title"></h1>
+						</div>
+
+						<div class="panel-body">
+							<p class="story-text disable-select">story text here</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row row-eq-height">
+				<div class="col-sm-12" id="see-more-block">
+					<button type="button" id="btn-see-more" class="btn btn-lg btn-default">See More</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- scriptes -->
+	<script src="{{STATIC_URL}}scripts/new-story.js"></script>
+</body>
 </html>
