@@ -14,11 +14,6 @@ body {
 	width: 100%;
 }
 
-.story-panel{
-	min-height: 200px;
-	cursor: pointer;
-}
-
 .navbar-btn{
 	margin-left: 5px;
 }
@@ -53,4 +48,10 @@ body {
 
 #navbar-btns-before-login{
 	display: none;
+}
+
+
+.story-panel{
+	min-height: 200px;
+	cursor: pointer;
 }

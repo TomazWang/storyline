@@ -87,30 +87,138 @@
 
 		<!-- story list -->
 		<div id="storys" class="container">
-			{% load tags %}
-			{% for story in story_list %}
-			{% if forloop.counter|divisibleby:2 %}
 			<div class="row row-eq-height">
-			{% endif %}
-
 				<div class="col-sm-6">
-					<div class="panel panel-default {{story|key:'type_css'}} story-panel">
+					<div class="panel panel-default story-panel">
 						<div class="panel-heading">
 							<h1 class="panel-title"></h1>
 						</div>
 
 						<div class="panel-body">
-							<p class="story-text disable-select">{{story|key:'content'}}</p>
+							<p class="story-text disable-select">story text here</p>
 						</div>
 					</div>
 				</div>
 
-			{% if forloop.counter|divisibleby:2 or forloop.last%}
-			</div>
-			{% endif %}
+				<div class="col-sm-6">
+					<div class="panel panel-default story-panel">
+						<div class="panel-heading">
+							<h1 class="panel-title"></h1>
+						</div>
 
-			{% endfor %}
-		
+						<div class="panel-body">
+							<p class="story-text disable-select">story text here</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="row row-eq-height">
+				<div class="col-sm-6">
+					<div class="panel panel-default story-panel">
+						<div class="panel-heading">
+							<h1 class="panel-title"></h1>
+						</div>
+
+						<div class="panel-body">
+							<p class="story-text disable-select">story text here</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6">
+					<div class="panel panel-default story-panel">
+						<div class="panel-heading">
+							<h1 class="panel-title"></h1>
+						</div>
+
+						<div class="panel-body">
+							<p class="story-text disable-select">story text here</p>
+						</div>
+					</div>
+				</div>
+			</div>	
+
+
+
+			<div class="row row-eq-height">
+				<div class="col-sm-6">
+					<div class="panel panel-default story-panel">
+						<div class="panel-heading">
+							<h1 class="panel-title"></h1>
+						</div>
+
+						<div class="panel-body">
+							<p class="story-text disable-select">story text here</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6">
+					<div class="panel panel-default story-panel">
+						<div class="panel-heading">
+							<h1 class="panel-title"></h1>
+						</div>
+
+						<div class="panel-body">
+							<p class="story-text disable-select">story text here</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row row-eq-height">
+				<div class="col-sm-6">
+					<div class="panel panel-default story-panel">
+						<div class="panel-heading">
+							<h1 class="panel-title"></h1>
+						</div>
+
+						<div class="panel-body">
+							<p class="story-text disable-select">story text here</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6">
+					<div class="panel panel-default story-panel">
+						<div class="panel-heading">
+							<h1 class="panel-title"></h1>
+						</div>
+
+						<div class="panel-body">
+							<p class="story-text disable-select">story text here</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row row-eq-height">
+				<div class="col-sm-6">
+					<div class="panel panel-default story-panel">
+						<div class="panel-heading">
+							<h1 class="panel-title"></h1>
+						</div>
+
+						<div class="panel-body">
+							<p class="story-text disable-select">story text here</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6">
+					<div class="panel panel-default story-panel">
+						<div class="panel-heading">
+							<h1 class="panel-title"></h1>
+						</div>
+
+						<div class="panel-body">
+							<p class="story-text disable-select">story text here</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
 			<div class="row row-eq-height">
 				<div class="col-sm-12" id="see-more-block">
 					<button type="button" id="btn-see-more" class="btn btn-lg btn-default">See More</button>
@@ -118,7 +226,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 
 	<!-- scriptes -->
 	<script src="{{STATIC_URL}}scripts/new-story.js"></script>
