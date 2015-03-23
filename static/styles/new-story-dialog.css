@@ -4,11 +4,17 @@
 	width:1px; /* only for IE7 */
 }
 
+#new-story-container{
+
+	height: 100%;
+
+}
 
 #new-story-panel{
 	clear:both;
 	position:relative;
 	margin: 0 20%;
+	
 }
 
 
@@ -19,4 +25,8 @@
 #new-story-summit{
 	margin: 20px 0px 5px 5px;
 	text-align: right;
+}
+
+#new-story-title{
+	margin-bottom: 10px;
 }

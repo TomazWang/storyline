@@ -54,14 +54,14 @@
 		</div>
 	</nav>
 
-	<div class="container" id="context">
+	<div class="container" id="new-story-container">
 		<!-- new story dialog -->
 		<div id="new-story-page" class="container">
 			<div id="new-story-block" class="container">
 				<div id="floater"></div>
 				<div id="new-story-panel" class="panel panel-default">
 					<div id="new-story-title-bar" class="panel-heading">
-						<h1 class="panel-title">New Story</h1>
+						<h1 id="new-story-panel-title" class="panel-title">New Story</h1>
 					</div>
 					<div id="new-story-body" class="panel-body">
 						<div id="new-story-type-btns" class="btn-group" role="group" aria-label="...">
@@ -71,8 +71,8 @@
 							<button type="button" class="btn btn-info btn-story-type" id="btn-st-poem">Poem</button>
 							<button type="button" class="btn btn-danger btn-story-type" id="btn-st-thriller">Thriller</button>
 						</div>
-
 						<div id="new-story-text">
+							<input id="new-story-title" type="text" class="form-control" placeholder="Title" aria-describedby="basic-addon1">
 							<textarea id="new-story-textarea" class="form-control" rows="3"></textarea>
 						</div>
 
@@ -85,42 +85,24 @@
 			</div>
 		</div>
 
-		<!-- story list -->
-		<div id="storys" class="container">
-			{% load tags %}
-			{% for story in story_list %}
-			{% if forloop.counter|divisibleby:2 %}
-			<div class="row row-eq-height">
-			{% endif %}
-
-				<div class="col-sm-6">
-					<div class="panel panel-default {{story|key:'type_css'}} story-panel">
-						<div class="panel-heading">
-							<h1 class="panel-title"></h1>
-						</div>
-
-						<div class="panel-body">
-							<p class="story-text disable-select">{{story|key:'content'}}</p>
-						</div>
-					</div>
-				</div>
-
-			{% if forloop.counter|divisibleby:2 or forloop.last%}
-			</div>
-			{% endif %}
-
-			{% endfor %}
 		
-			<div class="row row-eq-height">
+		<div class="container">
+
+			<!-- story list -->
+			<div id="storys">
+			
+			</div>
+			<div id="see-more-block" class="row row-eq-height">
 				<div class="col-sm-12" id="see-more-block">
 					<button type="button" id="btn-see-more" class="btn btn-lg btn-default">See More</button>
 				</div>
 			</div>
 		</div>
 	</div>
-	
+
 
 	<!-- scriptes -->
 	<script src="{{STATIC_URL}}scripts/new-story.js"></script>
+	<script src="{{STATIC_URL}}scripts/main.js"></script>
 </body>
 </html>

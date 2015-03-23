@@ -8,4 +8,5 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$','storyline.views.index'),
+    url(r'^data/get_all_story_cover','storyline.ajax.getAllStorys'),
 )
